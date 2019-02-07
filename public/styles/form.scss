@@ -1,0 +1,123 @@
+
+@import '../styles/common.scss';
+
+.left-col {
+    border: {
+        top: $black-border;
+        bottom: $black-border;
+        right: $black-border;
+    }
+}
+
+.right-col {
+    border: {
+        top: $black-border;
+        bottom: $black-border;
+    }
+    background: $beige url("../../images/white-flower.png") center;
+    background-size: cover;
+}
+
+.form-area {
+    background: $beige;
+    border: 20px solid white;
+
+    button {
+        background-color: $black;
+    }
+
+    form {
+        border: 2px solid $black;
+        background-color: white;
+    }
+
+    input, select, textarea {
+        background-color: $beige;
+        color: $black;
+        border: 1px solid $black;    
+
+        &::placeholder {
+            color: $black;
+        }
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+
+}
+
+.dropdown-area {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        background-color: $black;
+    }
+}
+
+.rating {
+    position: relative;
+    .star-group {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        cursor: pointer;
+
+        &:last-child {
+            position: static;
+        }
+
+        &:nth-child(1) {
+            z-index: 5;
+        }
+
+        &:nth-child(2) {
+            z-index: 4;
+        }
+
+        &:nth-child(3) {
+            z-index: 3;
+        }
+
+        &:nth-child(4) {
+            z-index: 2;
+        }
+
+        &:nth-child(5) {
+            z-index: 1;
+        }
+
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .icon {
+            float: left;
+            color: transparent;
+        }
+
+        &:last-child .icon {
+            color: $black;
+        }
+    }
+
+    
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: $blue;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: $black;
+  text-shadow: 0 0 5px $blue;
+}

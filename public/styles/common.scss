@@ -1,0 +1,46 @@
+
+$beige: #F9ECE0;
+$black: #433E3F;
+$blue: #9CAFB7;
+$playfair: 'Playfair Display', serif;
+$source: 'Source Sans Pro', sans-serif;
+$black-border: 2px solid $black;
+$relevant: 4rem;
+
+.fa-times {
+    cursor: pointer;
+}
+
+body {
+    color: $black;
+    font: {
+        family: $source;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: {
+        family: $playfair;
+    }
+
+}
+
+.main-title h1 {
+    font: {
+        size: $relevant;
+        weight: bold;
+    }
+}
+
+.table {
+    thead {
+        border-color: $black;
+        font-weight: bold;
+    }
+}
+
+.your-items {
+    h2 {
+        font-weight: bold;
+    }
+}

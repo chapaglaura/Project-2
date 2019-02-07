@@ -1,0 +1,98 @@
+body {
+  color: #433E3F;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.main-title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.table thead {
+  border-color: #433E3F;
+  font-weight: bold;
+}
+
+.your-items h2 {
+  font-weight: bold;
+}
+
+.left-col {
+  border-top: 2px solid #433E3F;
+  border-bottom: 2px solid #433E3F;
+  border-right: 2px solid #433E3F;
+}
+
+.right-col {
+  border-top: 2px solid #433E3F;
+  border-bottom: 2px solid #433E3F;
+  background: #F9ECE0 url("../../images/white-flower.png") center;
+  background-size: cover;
+}
+
+.form-area {
+  background: #F9ECE0;
+  border: 20px solid white;
+}
+
+.form-area button {
+  background-color: #433E3F;
+}
+
+.form-area form {
+  border: 2px solid #433E3F;
+  background-color: white;
+}
+
+.form-area input, .form-area select, .form-area textarea {
+  background-color: #F9ECE0;
+  color: #433E3F;
+  border: 1px solid #433E3F;
+}
+
+.form-area input::-webkit-input-placeholder, .form-area select::-webkit-input-placeholder, .form-area textarea::-webkit-input-placeholder {
+  color: #433E3F;
+}
+
+.form-area input:-ms-input-placeholder, .form-area select:-ms-input-placeholder, .form-area textarea:-ms-input-placeholder {
+  color: #433E3F;
+}
+
+.form-area input::-ms-input-placeholder, .form-area select::-ms-input-placeholder, .form-area textarea::-ms-input-placeholder {
+  color: #433E3F;
+}
+
+.form-area input::placeholder, .form-area select::placeholder, .form-area textarea::placeholder {
+  color: #433E3F;
+}
+
+.form-area label {
+  font-weight: bold;
+}
+
+.dropdown-area {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown-area button {
+  background-color: #433E3F;
+}
+
+.main-title h1 {
+  background-color: #F9ECE0;
+  border-bottom: 2px solid #433E3F;
+}
+/*# sourceMappingURL=filters.css.map */

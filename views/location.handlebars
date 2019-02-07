@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="/styles/filters.css">
+<section class="container-fluid main-title p-0">
+  <h1 class="filter-title text-center py-5">{{location}}</h1>
+</section>
+<section class="filter-section">
+  <div class="dropdown-area">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCategoryButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Categories
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownCategoryButton">
+        <a data-filter="category" class="dropdown-item" href="#">Clothes</a>
+        <a data-filter="category" class="dropdown-item" href="#">Books</a>
+        <a data-filter="category" class="dropdown-item" href="#">Papers</a>
+        <a data-filter="category" class="dropdown-item" href="#">Miscellaneous</a>
+        <a data-filter="category" class="dropdown-item" href="#">Sentimental</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownLocationButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Location
+      </button>
+      <div class="dropdown-menu locs-menu" aria-labelledby="dropdownLocationButton">
+        <a data-filter="location" class="dropdown-item" href="#">Bedroom</a>
+        <a data-filter="location" class="dropdown-item" href="#">Bathroom</a>
+        <a data-filter="location" class="dropdown-item" href="#">Kitchen</a>
+        <a data-filter="location" class="dropdown-item" href="#">Living Room</a>
+        <a data-filter="location" class="dropdown-item" href="#">Office</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid your-items">
+  <h2 class="">Your Items</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Category</th>
+        <th scope="col">Description</th>
+        <th scope="col">Joy</th>
+        <th scope="col"><i class="fas fa-trash-alt"></i></th>
+      </tr>
+    </thead>
+    <tbody class="table-body">
+      {{#each items}}
+      <tr data-id="{{id}}">
+        <td data-name="item_name" contentEditable>{{item_name}}</td>
+        <td data-name="category" contentEditable>{{category}}</td>
+        <td data-name="description" contentEditable>{{description}}</td>
+        <td data-name="joy" contentEditable>{{joy}}</td>
+        <td><i class="fas fa-times"></i></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</section>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <small>Sparks of Joy!</small>
+      </div>
+      <div class="col-12 text-center">
+        <a href="/items">Go Back</a>
+      </div>
+    </div>
+  </div>
+</footer>

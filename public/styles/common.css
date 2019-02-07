@@ -1,0 +1,27 @@
+.fa-times {
+  cursor: pointer;
+}
+
+body {
+  color: #433E3F;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+.main-title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.table thead {
+  border-color: #433E3F;
+  font-weight: bold;
+}
+
+.your-items h2 {
+  font-weight: bold;
+}
+/*# sourceMappingURL=common.css.map */
