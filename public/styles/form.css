@@ -93,6 +93,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .rating {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .rating .star-group {
@@ -100,7 +102,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   height: 100%;
-  cursor: pointer;
 }
 
 .rating .star-group:last-child {
@@ -137,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 .rating .star-group .icon {
   float: left;
   color: transparent;
+  cursor: pointer;
 }
 
 .rating .star-group:last-child .icon {

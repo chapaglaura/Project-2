@@ -60,13 +60,16 @@
 }
 
 .rating {
-    position: relative;
+    display: flex;
+    align-items: center;
+
     .star-group {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         cursor: pointer;
+        padding: 0;
 
         &:last-child {
             position: static;
@@ -102,6 +105,7 @@
         .icon {
             float: left;
             color: transparent;
+            cursor: pointer;
         }
 
         &:last-child .icon {
@@ -114,10 +118,10 @@
 
 .rating:not(:hover) label input:checked ~ .icon,
 .rating:hover label:hover input ~ .icon {
-  color: $blue;
+  color: #5a6268;
 }
 
 .rating label input:focus:not(:checked) ~ .icon:last-child {
   color: $black;
-  text-shadow: 0 0 5px $blue;
+  text-shadow: 0 0 5px $beige;
 }
