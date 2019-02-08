@@ -89,5 +89,36 @@ $(document).ready(function () {
   $('.icon').click(function () {
     var value = $(this).siblings('input')[0].value + '/5';
     $('.rating').attr('data-value', value);
-  })
+  });
+
+  $("#bedroom").on("click", function () {
+    $('.carousel').carousel(0);
+    $('.carousel').carousel('pause');
+  });
+  $("#closet").on("click", function () {
+    $('.carousel').carousel(1);
+    $('.carousel').carousel('pause');
+  });
+  $("#office").on("click", function () {
+    $('.carousel').carousel(2);
+    $('.carousel').carousel('pause');
+  });
+  $("#kitchen").on("click", function () {
+    $('.carousel').carousel(3);
+    $('.carousel').carousel('pause');
+  });
+  $("#entrance").on("click", function () {
+    $('.carousel').carousel(4);
+    $('.carousel').carousel('pause');
+  });
+  $("#livingroom").on("click", function () {
+    $('.carousel').carousel(5);
+    $('.carousel').carousel('pause');
+  });
+  $("#bathroom").on("click", function () {
+    $('.carousel').carousel(6);
+    $('.carousel').carousel('pause');
+  });
+
+
 });

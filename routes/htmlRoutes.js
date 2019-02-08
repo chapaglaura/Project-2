@@ -2,12 +2,7 @@ var db = require("../models");
 
 module.exports = function (app) {
   app.get("/", function (req, res) {
-    db.Example.findAll({}).then(function (dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    res.render("index", {});
   });
 
   app.get("/items", function (req, res) {
@@ -57,7 +52,12 @@ module.exports = function (app) {
       });
     });
   });
-    app.get("*", function(req, res) {
-      res.render("404");
-    });
+
+  app.get("/tips", function (req, res) {
+    res.render("tips");
+  });
+
+  app.get("*", function (req, res) {
+    res.render("404");
+  });
 };

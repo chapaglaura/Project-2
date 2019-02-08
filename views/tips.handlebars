@@ -1,19 +1,158 @@
 <div class="container">
-  <div class="row">
-    <div class="col-8 offset-2">
-      <div class="card mt-4">
-        <div class="card-body">
-          <h5 class="card-title">Example</h5>
-          <p>
-            <strong>ID</strong>: {{example.id}}</p>
-          <p>
-          <p>
-            <strong>Text</strong>: {{example.text}}</p>
-          <p>
-            <strong>Description:</strong> {{example.description}}</p>
-            <a href="/">← Back To Home</a>
+        <div class="row">
+            <div class="col-lg-12 mx-auto " id="top">
+                <header>
+                    <h1>Tips</h1>
+                </header>
+                <p>Here are some fabulouse tips on how to tidy</p>
+            </div>
         </div>
-      </div>
+        <div class="row" id="houserow">
+            <div class="col-lg-8 mx-auto centered-flex">
+                <!--  1000 700 80% smaller 1250 875  offset-md-5  https://flexboxfroggy.com/   -->
+                <img src="../images/kondo_main.png" width="800" height="560" id="house" alt="House"
+                    usemap="#housemap" />
+                <div>
+                    <div class="house-second-floor">
+                        <button id="bedroom" class="house-button">bedroom</button>
+                        <button id="closet" class="house-button">closet</button>
+                        <button id="office" class="house-button">office</button>
+                    </div>
+
+                    <div class="house-first-floor">
+                        <button id="kitchen" class="house-button">kitchen</button>
+                        <button id="entrance" class="house-button">entrance</button>
+                        <button id="livingroom" class="house-button">livingroom</button>
+                        <button id="bathroom" class="house-button">bathroom</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="inforow">
+            <div class="col-lg-10 mx-auto centered-flex ">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel-control"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p> bedroom/joy corner
+                                <br>• Wash sheets and pillowcases frequently.
+                                <br>• Keep lighting soft and indirect
+                                <br>• Designate a single storage space for hobby-related komono.
+                                <br>• If you pursue only a single interest, such as calligraphy, assign one storage
+                                place for everything related to it.
+                                <br>• Take photos of your children’s art, only keep your favorite, discard the rest.
+                                <br>• Always save yout mementos in a way that they can be enjoyed at any time, try
+                                putting them in a scrapbook.
+                                <br>• Designate a single storage space for hobby-related komono.
+                                <br>•
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>closet/Storage
+                                <br>• Organize drawers in a manner similar to a Bento box; compact and cozy.
+                                <br>• Before thinking of where to store anything, first consider discarding it.
+                                <br>• Hang clothes so that they rise to the right.
+                                <br>• Light materials such as cotton should be kept in the upper drawers and thick,
+                                heavy materials, such as wool, in the lower drawers.
+                                <br>• In general, dark colors should be in the back of the drawer and light colors in
+                                the
+                                front.
+                                <br>• Arrange your accessories so that the inside of your drawer looks like a showcase.
+                                <br>• Avoid putting items in plastic bags because it will make them appear as garbage.
+                                <br> Instead put them in a beautiful bag you really like.
+
+
+                            </p>
+                            <!-- <img src="../public/assets/Instagram-mariekondo.jpg" width="400" alt="Second slide"> -->
+                        </div>
+                        <div class="carousel-item">
+                            <p>office</p>
+                            <p>
+
+                                <br>• Valuables are the one category where practicality, not the joy factor, takes
+                                priority when selecting what to keep.
+                                <br> Because they are valuable, they have a fair bit of pride and should be stored with
+                                respect.
+                                <br>• You can clear your mind simply by discarding all unnecessary papers. Keep the desk
+                                area relatively clear.
+                                <br>• Don’t make your office solely practical. It’s important to add a playful touch
+                                precisely because it’s a work space.
+
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>kitchen
+                                <br>• Make the dishes you love the ones you use every day. Unpack them and stack them in
+                                your cupboard.
+                                <br>• Place knives, forks, spoons, and chopsticks in their own compartments within a
+                                cutlery tray.
+                                <br>• Pick a cutlery tray made of rattan, bamboo, or some other natural material with a
+                                gentle embrace,
+                                <br> rather than a plastic case in which it will rattle around.
+                                <br>• When storing, stack similarly shaped items inside each other, such as pots with
+                                pots and bowls with bowls,
+                                <br> so that you make the most of the cupboard’s height.
+                                <br>• Nothing should be kept near the sink, not even your dish detergent or sponge.
+                                <br>• The basic rule is to discard anything that is past the expiration date.
+                                <br> When in doubt, ask yourself whether it would spark joy to cook something with it.
+                                <br>• I recommend storing things together. For example, if you don’t use small packages
+                                of seasonings that often,
+                                <br> try emptying them into jars, one for each seasoning.
+                                <br>• Plastic bags should be flattened, folded, and stored upright just like clothes to
+                                prevent overstocking.
+                                <br>• You can also store plastic bags in a compact box that keeps them from expanding.
+                                <br> The container should be half the size of a tissue box.
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>entrance
+                                <br>• I recommend keeping your entranceway as clear as possible.
+                                <br>• Leave out only the shoes you have worn that day to air them.
+
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>livingroom
+                                <br>• Have a fixed place for the remote control, magazines, and so on.
+                                <br>• Consider adding plants, music you love, and a special corner for family photos.
+
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <p>bathroom
+                                <br>• If possible store all your skincare products in one spot.
+                                <br>• Store makeup in a fabulous box or vanity bag.
+                                <br>• You can increase the relaxation effect significantly by selecting a container made
+                                of natural material such as rattan and by using dividers.
+                                <br>• Even those towels that you are planning to use as rags and then dispose of should
+                                be folded and stored upright, not stuffed in a bag.
+                                <br>• Store makeup in a fabulous box or vanity bag.
+                                <br>• If there’s not enough space, you can make a special corner for them in your closet
+                                or on a shelf where you keep komono.
+                                <br>• Small items, such as samples, tubes of eye cream, and so on, can be stored neatly
+                                in a smallish box.
+
+                            </p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-</div>
