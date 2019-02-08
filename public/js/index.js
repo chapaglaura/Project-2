@@ -18,7 +18,27 @@ $(document).ready(function () {
       data: userLogin
     }).then(
       function () {
-        console.log("created new item");
+        console.log("logged in");
+        location.reload();
+      }
+    );
+  });
+
+  $(".submit-user-signup").on("submit", function (event) {
+    event.preventDefault();
+    var userSignup = {
+      username: $("#username").val().trim(),
+      password: $('#password').val().trim()
+    };
+
+    console.log('submitting', userSignup);
+
+    $.ajax("/api/usersignup", {
+      type: "GET",
+      data: userSignup
+    }).then(
+      function () {
+        console.log("signed up");
         location.reload();
       }
     );

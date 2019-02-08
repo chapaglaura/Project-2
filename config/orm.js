@@ -60,15 +60,19 @@ var orm = {
     var password = req.body.password;
     db[model].findOne({
       where: {
-        username: username,
-        password: password
+        username: username
       }
     }).then(function (data) {
       console.log('User exists');
       res.json(data);
+    }).catch(function (data) {
+      db[model].create(req.body)
+        .then(function (data) {
+          console.log('User created');
+          res.json(data);
+        })
     });
   }
 };
-
 
 module.exports = orm;

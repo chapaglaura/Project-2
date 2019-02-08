@@ -21,4 +21,7 @@ module.exports = function (app) {
   app.get('/api/userlogin', function (req, res) {
     console.log(orm.checkUser(req, res, 'User'));
   });
+  app.get('/api/usersignup', function (req, res) {
+    console.log(orm.createUser(req, res, 'User'));
+  });
 };

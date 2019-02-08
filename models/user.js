@@ -8,10 +8,11 @@ module.exports = function(sequelize, DataTypes) {
         isAlphanumeric: true
       }
     },
-    user_id: {
-      type: DataTypes.INTEGER,
+    password: {
+      type:DataTypes.STRING,
+      allowNull: false,
       validate: {
-          isNumeric: true
+        len: [8, 15]
       }
     }
   });
