@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/../styles/form.css">
 <section class="container-fluid main-title">
-  <h1>Welcome to Spark Cleaning!</h1>
+  <h1 class="text-center">Welcome to Spark Cleaning!</h1>
 </section>
 <section class="container-fluid main-area">
   <div class="row no-gutters">
@@ -9,11 +9,12 @@
         <form class="submit-item p-3">
           <div class="form-group">
             <label for="item-name">Item:</label>
-            <input required type="text" class="form-control" id="item-name" aria-describedby="itemName" placeholder="Enter item name">
+            <input required type="text" class="form-control" id="item-name" aria-describedby="itemName"
+              placeholder="Enter item name">
           </div>
           <div class="form-group">
             <label for="category-select">Category:</label>
-            <select id="category-select" class="custom-select"> 
+            <select id="category-select" class="custom-select">
               <option selected value="Clothes">Clothes</option>
               <option value="Books">Books</option>
               <option value="Papers">Papers</option>
@@ -35,7 +36,8 @@
           </div>
           <div class="form-group">
             <label for="description-text">Description:</label>
-            <textarea class="form-control" id="description-text" rows="3" required></textarea>
+            <textarea class="form-control" id="description-text" rows="3" required
+              placeholder="Enter a short description to identify your item"></textarea>
           </div>
           <div class="form-group rating" data-value="0/5">
             <label>Joy: </label>
@@ -89,8 +91,8 @@
     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 right-col">
       <div class="cats dropdown-area">
         <div class="dropdown">
-          <button class=" black-button btn btn-secondary dropdown-toggle" type="button" id="dropdownCategoryButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button class=" black-button btn btn-secondary dropdown-toggle" type="button" id="dropdownCategoryButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Categories
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownCategoryButton">
@@ -104,8 +106,8 @@
       </div>
       <div class="locs dropdown-area">
         <div class="dropdown">
-          <button class="black-button btn btn-secondary dropdown-toggle" type="button" id="dropdownLocationButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button class="black-button btn btn-secondary dropdown-toggle" type="button" id="dropdownLocationButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Location
           </button>
           <div class="dropdown-menu locs-menu" aria-labelledby="dropdownLocationButton">
@@ -122,28 +124,30 @@
 </section>
 <section class="container-fluid your-items">
   <h2>Your Items</h2>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Item</th>
-        <th scope="col">Category</th>
-        <th scope="col">Location</th>
-        <th scope="col">Description</th>
-        <th scope="col">Joy</th>
-        <th scope="col"><i class="fas fa-trash-alt"></i></th>
-      </tr>
-    </thead>
-    <tbody class="table-body">
-      {{#each items}}
-      <tr data-id="{{id}}">
-        <td data-name="item_name" contentEditable>{{item_name}}</td>
-        <td data-name="category">{{category}}</td>
-        <td data-name="location">{{location}}</td>
-        <td data-name="description" contentEditable>{{description}}</td>
-        <td data-name="joy">{{joy}}</td>
-        <td><i class="fas fa-times"></i></td>
-      </tr>
-      {{/each}}
-    </tbody>
-  </table>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Category</th>
+          <th scope="col">Location</th>
+          <th scope="col">Description</th>
+          <th scope="col">Joy</th>
+          <th scope="col"><i class="fas fa-trash-alt"></i></th>
+        </tr>
+      </thead>
+      <tbody class="table-body">
+        {{#each items}}
+        <tr data-id="{{id}}">
+          <td data-name="item_name" contentEditable>{{item_name}}</td>
+          <td data-name="category">{{category}}</td>
+          <td data-name="location">{{location}}</td>
+          <td data-name="description" contentEditable>{{description}}</td>
+          <td data-name="joy">{{joy}}</td>
+          <td><i class="fas fa-times"></i></td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
 </section>
