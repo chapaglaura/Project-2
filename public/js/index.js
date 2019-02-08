@@ -1,8 +1,10 @@
 
 $(document).ready(function () {
 
-  $('.start').click(function () {
-    $.get('/items');
+  $('.start-button').click(function () {
+    $.ajax('/items', {
+      method: 'GET'
+    });
   })
 
   $(".submit-item").on("submit", function (event) {

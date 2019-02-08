@@ -9,6 +9,13 @@ body {
     font-size: 21px;
 }
 
+.main-title {
+    h1 {
+        background-color: $beige;
+        border-bottom: 2px solid $black;
+    }
+}
+
 
 #houserow {
     height: 550px;
@@ -107,4 +114,10 @@ body {
 
 .carousel-control {
     height: 1000px;
+}
+
+.carousel-item {
+    li {
+        list-style: square;
+    }
 }

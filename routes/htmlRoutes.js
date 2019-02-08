@@ -12,8 +12,7 @@ module.exports = function (app) {
       });
     });
   });
-
-
+  
   app.get("/items/location/:loc", function (req, res) {
     var location = req.params.loc;
     location = location.split('_');
