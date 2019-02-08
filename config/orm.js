@@ -51,9 +51,9 @@ var orm = {
       }
     }).then(function (data) {
       res.json(data);
-      console.log(data);
+      console.log(data, 'hello!!!!!');
     }).catch(function (err) {
-      console.log(err);
+      console.log(err, 'errooooor!!!');
     })
   }
 };
