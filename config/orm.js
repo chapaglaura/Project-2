@@ -1,7 +1,5 @@
 var db = require("../models");
 
-var tableName = "Items";
-
 var orm = {
 
   selectAll(res, model) {
