@@ -51,10 +51,22 @@ var orm = {
       }
     }).then(function (data) {
       res.json(data);
-      console.log(data, 'hello!!!!!');
-    }).catch(function (err) {
-      console.log(err, 'errooooor!!!');
-    })
+      console.log(data, 'sent!!!!!');
+    });
+  },
+
+  createUser(req, res, model) {
+    var username = req.body.username;
+    var password = req.body.password;
+    db[model].findOne({
+      where: {
+        username: username,
+        password: password
+      }
+    }).then(function (data) {
+      console.log('User exists');
+      res.json(data);
+    });
   }
 };
 

@@ -19,6 +19,6 @@ module.exports = function (app) {
   });
 
   app.get('/api/userlogin', function (req, res) {
-    orm.checkUser(req, res, 'User');
+    console.log(orm.checkUser(req, res, 'User'));
   });
 };
