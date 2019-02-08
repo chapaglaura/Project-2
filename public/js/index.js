@@ -1,6 +1,9 @@
 
 $(document).ready(function () {
 
+  $('.start').click(function () {
+    $.get('/items');
+  })
 
   $(".submit-item").on("submit", function (event) {
     event.preventDefault();

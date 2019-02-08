@@ -1,0 +1,109 @@
+@import '../styles/common.scss';
+
+body {
+    display: inline;
+    color: $black;
+    background: $beige;
+    max-width: 1920px;
+    margin: auto;
+    font-size: 21px;
+}
+
+
+#houserow {
+    height: 550px;
+}
+
+#inforow {
+    display: flex;
+    justify-content: center;
+}
+
+#top {
+    height: 100px;
+}
+
+#house {
+    position: absolute;
+    z-index: -1;
+    max-width: 1920px;
+    align-content: center;
+}
+
+#bedroom {
+    background-color: aqua;
+    width: 250px;
+}
+
+#closet {
+    background-color: rgba(191, 0, 255, 0.358);
+    width: 250px;
+}
+
+#office {
+    background-color: rgba(206, 211, 152, 0.693);
+    width: 250px;
+}
+
+#kitchen {
+    background-color: rgba(206, 211, 152, 0.693);
+    width: 250px;
+}
+
+#entrance {
+    background-color: rgba(206, 211, 152, 0.693);
+    width: 155px;
+}
+
+#livingroom {
+    background-color: rgba(206, 211, 152, 0.693);
+    width: 220px;
+}
+
+#bathroom {
+    background-color: rgba(206, 211, 152, 0.693);
+    width: 125px;
+}
+
+
+.container {
+    position: absolute;
+    max-width: 1920px;
+    height: 2000px;
+}
+
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.house-second-floor {
+    display: flex;
+    position: relative;
+    top: 107px;
+}
+
+.house-first-floor {
+    display: flex;
+    position: relative;
+    top: 107px;
+}
+
+.house-button {
+    opacity: 0.5;
+    height: 214px;
+}
+
+.carousel {
+    width: 1000px;
+    height: 500px;
+}
+
+.carousel-indicators {
+    height: 0px;
+}
+
+.carousel-control {
+    height: 1000px;
+}

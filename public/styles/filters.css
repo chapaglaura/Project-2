@@ -1,3 +1,7 @@
+.fa-times {
+  cursor: pointer;
+}
+
 body {
   color: #433E3F;
   font-family: "Source Sans Pro", sans-serif;
@@ -89,6 +93,75 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-area button {
   background-color: #433E3F;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rating .star-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+}
+
+.rating .star-group:last-child {
+  position: static;
+}
+
+.rating .star-group:nth-child(1) {
+  z-index: 5;
+}
+
+.rating .star-group:nth-child(2) {
+  z-index: 4;
+}
+
+.rating .star-group:nth-child(3) {
+  z-index: 3;
+}
+
+.rating .star-group:nth-child(4) {
+  z-index: 2;
+}
+
+.rating .star-group:nth-child(5) {
+  z-index: 1;
+}
+
+.rating .star-group input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating .star-group .icon {
+  float: left;
+  color: transparent;
+  cursor: pointer;
+}
+
+.rating .star-group:last-child .icon {
+  color: #433E3F;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #5a6268;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #433E3F;
+  text-shadow: 0 0 5px #F9ECE0;
 }
 
 .main-title h1 {

@@ -1,3 +1,7 @@
+.fa-times {
+  cursor: pointer;
+}
+
 body {
   color: #433E3F;
   font-family: "Source Sans Pro", sans-serif;
@@ -92,9 +96,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rating {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rating .star-group {
@@ -102,6 +109,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   height: 100%;
+  cursor: pointer;
+  padding: 0;
 }
 
 .rating .star-group:last-child {
@@ -147,11 +156,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .rating:not(:hover) label input:checked ~ .icon,
 .rating:hover label:hover input ~ .icon {
-  color: #9CAFB7;
+  color: #5a6268;
 }
 
 .rating label input:focus:not(:checked) ~ .icon:last-child {
   color: #433E3F;
-  text-shadow: 0 0 5px #9CAFB7;
+  text-shadow: 0 0 5px #F9ECE0;
 }
 /*# sourceMappingURL=form.css.map */
