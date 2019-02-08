@@ -1,9 +1,6 @@
 
 $(document).ready(function () {
 
-  $('.start-button').click(function () {
-    window.location.href = '/items';
-  });
 
   $(".submit-user-login").on("submit", function (event) {
     event.preventDefault();
