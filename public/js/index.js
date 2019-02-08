@@ -2,9 +2,7 @@
 $(document).ready(function () {
 
   $('.start-button').click(function () {
-    $.ajax('/items', {
-      method: 'GET'
-    });
+    window.location.href = '/items';
   })
 
   $(".submit-item").on("submit", function (event) {

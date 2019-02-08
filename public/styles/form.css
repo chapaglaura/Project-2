@@ -2,9 +2,14 @@
   cursor: pointer;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   color: #433E3F;
   font-family: "Source Sans Pro", sans-serif;
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,10 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 .form-area {
   background: #F9ECE0;
   border: 20px solid white;
-}
-
-.form-area button {
-  background-color: #433E3F;
 }
 
 .form-area form {
@@ -89,10 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.dropdown-area button {
-  background-color: #433E3F;
 }
 
 .rating {

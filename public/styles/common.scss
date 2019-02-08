@@ -11,11 +11,16 @@ $relevant: 4rem;
     cursor: pointer;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     color: $black;
     font: {
         family: $source;
     }
+    min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,4 +48,8 @@ h1, h2, h3, h4, h5, h6 {
     h2 {
         font-weight: bold;
     }
+}
+
+button {
+    background-color: $black;
 }
