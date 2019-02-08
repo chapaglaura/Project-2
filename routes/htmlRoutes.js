@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.get("/", function (req, res) {
     db.Example.findAll({}).then(function (dbExamples) {
       res.render("index", {
-        msg: "Welcome!",
+        msg: "Joy Spark!",
         examples: dbExamples
       });
     });
@@ -57,7 +57,24 @@ module.exports = function (app) {
       });
     });
   });
-    app.get("*", function(req, res) {
-      res.render("404");
-    });
+
+  app.get("/tiddytips", function (req, res) {
+    res.render("tiddytips", {});
+  });
+
+
+  app.get("/routes", function (req, res) {
+    res.render("form", {});
+  });
+
+
+
+
+
+
+
+
+  app.get("*", function (req, res) {
+    res.render("404");
+  });
 };
