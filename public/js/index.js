@@ -3,7 +3,29 @@ $(document).ready(function () {
 
   $('.start-button').click(function () {
     window.location.href = '/items';
-  })
+  });
+
+  $(".submit-user-login").on("submit", function (event) {
+    event.preventDefault();
+
+
+    var userLogin = {
+      username: $("#username").val().trim(),
+      password: $('#password').val().trim()
+    };
+
+    console.log('submitting', userLogin);
+
+    $.ajax("/api/userlogin", {
+      type: "GET",
+      data: userLogin
+    }).then(
+      function () {
+        console.log("created new item");
+        location.reload();
+      }
+    );
+  });
 
   $(".submit-item").on("submit", function (event) {
     event.preventDefault();

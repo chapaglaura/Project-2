@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="../../public/styles/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/styles/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:300,700"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+        <section class="container-fluid main-title">
+            <h1 class="text-center">Welcome, user!</h1>
+        </section>
+        <section class="container-fluid main-area">
+            <div class="row no-gutters">
+                <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10 col-xs-10 mx-auto">
+                    <div class="container form-area p-3">
+                        <form class="submit-user-login p-3">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input required type="text" class="form-control" id="username"
+                                    aria-describedby="userName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input class="form-control" id="password" rows="3" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="../../public/js/index.js"></script>
+</body>
+
+</html>

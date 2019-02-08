@@ -16,5 +16,9 @@ module.exports = function (app) {
 
   app.delete('/api/items', function (req, res) {
     orm.deleteRow(req, res, 'Item');
-  })
+  });
+
+  app.get('/api/userlogin', function (req, res) {
+    orm.checkUser(req, res, 'User');
+  });
 };

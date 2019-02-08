@@ -38,6 +38,22 @@ var orm = {
       }
     }).then(function (data) {
       res.json(data);
+    });
+  },
+
+  checkUser(req, res, model) {
+    var username = req.body.username;
+    var password = req.body.password;
+    db[model].findOne({
+      where: {
+        username: username,
+        password: password
+      }
+    }).then(function (data) {
+      res.json(data);
+      console.log(data);
+    }).catch(function (err) {
+      console.log(err);
     })
   }
 };
