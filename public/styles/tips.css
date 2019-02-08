@@ -99,21 +99,6 @@ body {
   width: 125px;
 }
 
-.container {
-  position: absolute;
-  max-width: 1920px;
-  height: 2000px;
-}
-
-.centered-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .house-second-floor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,19 +119,6 @@ body {
   opacity: 0.5;
   height: 214px;
   text-transform: uppercase;
-}
-
-.carousel {
-  width: 1000px;
-  height: 500px;
-}
-
-.carousel-indicators {
-  height: 0px;
-}
-
-.carousel-control {
-  height: 1000px;
 }
 
 .carousel-item li {
