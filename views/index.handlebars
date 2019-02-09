@@ -1,14 +1,59 @@
+<style>
+  #top {
+    background-color:#9CAFB7;
+    color:#433E3F; 
+     width: 1920px;
+     height:150px;
+
+  }
+   body {
+    background-color:#433E3F;
+    color:#433E3F; 
+     display: flex;
+    justify-content: center;
+    font: "Sans Pro";
+
+  }
+  #home{
+    background-color:#F9ECE0;
+    height: 1920px;
+    width: 100%;
+  }
+   #spacer{
+  
+    height: 350px;
+  }
+  h2 {
+    font-size: 70px;
+    font-style: italic;
+    text-align: center;
+  }
+    h3 {
+    font-size: 100px;
+   font-family:  "Playfair Display";
+  
+  
+  }
+  button {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .centered-button {
+    margin: auto;
+  }
+</style>
+
 <div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>Let us Help you Bring joy to your life!</h2>
-        <form class="clearfix mb-4" action="POST">
-   
+  <div class="container-fluid">
+    <div class="row" id="top">
+      <div class="col-lg-6" >
+       
+   <h3>Spark Cleaning!</h3>
+   </div>
+     <div class="col-lg-4" >
 <ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" href="/index">Home</a>
     
   </li>
   <li class="nav-item">
@@ -23,12 +68,26 @@
     <a class="nav-link" href="#">more info</a>
   </li>
 </ul> 
-     
-        
-      </div>
-    </div>
-  </div>
-</div>
+ </div>
+ </div>
+ 
+   
+<div id="spacer"></div>
+ <div class="row">
+   <div class="col-8 offset-2">
+ <h2>"It's time to bring joy to your life!"</h2>
+ </div>
+ </div>
+  <div class="row">
+     <div class="col-8 offset-2">
+ <button class="centered-button">
+   <a class="nav-link " href="/routes">Begin!</a>
+ </button>
+ </div>
+ </div>
+  </div>   
+   </div>
+ 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>

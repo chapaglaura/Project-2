@@ -17,10 +17,14 @@
         justify-content: center;
     }
 
-    #top {
-        height: 100px;
+ #top {
+    background-color:#9CAFB7;
+    color:#433E3F; 
+     width: 1920px;
+     height:150px;
 
-    }
+  }
+ 
 
     #house {
         position: absolute;
@@ -106,13 +110,27 @@
     .carousel-control {
         height: 1000px;
     }
+    .spacer {
+        height: 200px;
+    }
+    h2 {
+           font-family:  "Playfair Display";
+           font-size: 80px;
+    }
+     h1 {
+           font-family:  "Playfair Display";
+           font-size: 50px;
+    }
 </style>
 
 
 <div class="container">
-      <div class="row">
-            <div class="col-lg-12 mx-auto " id="top">
-            <ul class="nav justify-content-end">
+      <div class="row" id="top">
+          <div class="col-lg-6 mx-auto " >
+          <h2>Spark Cleaning!</h2>
+            </div>
+             <div class="col-lg-5 mx-auto " >
+            <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" href="/">Home</a>
     
@@ -129,34 +147,30 @@
     <a class="nav-link" href="#">more info</a>
   </li>
 </ul> 
-
       </div>
-          
+       </div>
+    </div>
 
-    <div class="row">
-
-            <header>
-                <h1>Tips</h1>
-            </header>
-            <p>Here are some fabulouse tips on how to tidy</p>
-        </div>
+    <div class="spacer">
+         <p>Click on the rooms to get tidying tips.</p>
     </div>
     <div class="row" id="houserow">
         <div class="col-lg-8 mx-auto centered-flex">
+            
             <!--  1000 700 80% smaller 1250 875  offset-md-5  https://flexboxfroggy.com/   -->
             <img src="/images/kondo_main.png" width="800" height="560" id="house" alt="House" usemap="#housemap" />
             <div>
                 <div class="house-second-floor">
-                    <button id="bedroom" class="house-button">bedroom</button>
-                    <button id="closet" class="house-button">closet</button>
-                    <button id="office" class="house-button">office</button>
+                    <button id="bedroom" class="house-button"></button>
+                    <button id="closet" class="house-button"></button>
+                    <button id="office" class="house-button"></button>
                 </div>
 
                 <div class="house-first-floor">
-                    <button id="kitchen" class="house-button">kitchen</button>
-                    <button id="entrance" class="house-button">entrance</button>
-                    <button id="livingroom" class="house-button">livingroom</button>
-                    <button id="bathroom" class="house-button">bathroom</button>
+                    <button id="kitchen" class="house-button"></button>
+                    <button id="entrance" class="house-button"></button>
+                    <button id="livingroom" class="house-button"></button>
+                    <button id="bathroom" class="house-button"></button>
                 </div>
             </div>
         </div>
@@ -175,7 +189,8 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <p> bedroom/joy corner
+                        <h1>Bedroom/JoyCorner</h1>
+                        <p> 
                             <br>• Wash sheets and pillowcases frequently.
                             <br>• Keep lighting soft and indirect
                             <br>• Designate a single storage space for hobby-related komono.
@@ -185,11 +200,11 @@
                             <br>• Always save yout mementos in a way that they can be enjoyed at any time, try putting
                             them in a scrapbook.
                             <br>• Designate a single storage space for hobby-related komono.
-                            <br>•
                         </p>
                     </div>
                     <div class="carousel-item">
-                        <p>closet/Storage
+                         <h1>closet/Storage</h1>
+                        <p>
                             <br>• Organize drawers in a manner similar to a Bento box; compact and cozy.
                             <br>• Before thinking of where to store anything, first consider discarding it.
                             <br>• Hang clothes so that they rise to the right.
@@ -206,7 +221,7 @@
                         <!-- <img src="../public/assets/Instagram-mariekondo.jpg" width="400" alt="Second slide"> -->
                     </div>
                     <div class="carousel-item">
-                        <p>office</p>
+                        <h1>Office</h1>
                         <p>
 
                             <br>• Valuables are the one category where practicality, not the joy factor, takes priority
@@ -221,7 +236,8 @@
                         </p>
                     </div>
                     <div class="carousel-item">
-                        <p>kitchen
+                        <h1>Kitchen</h1>
+                        <p>
                             <br>• Make the dishes you love the ones you use every day. Unpack them and stack them in
                             your cupboard.
                             <br>• Place knives, forks, spoons, and chopsticks in their own compartments within a
@@ -245,21 +261,24 @@
                         </p>
                     </div>
                     <div class="carousel-item">
-                        <p>entrance
+                        <h1>Entrance</h1>
+                        <p>
                             <br>• I recommend keeping your entranceway as clear as possible.
                             <br>• Leave out only the shoes you have worn that day to air them.
 
                         </p>
                     </div>
                     <div class="carousel-item">
-                        <p>livingroom
+                        <h1>Livingroom</h1>
+                        <p>
                             <br>• Have a fixed place for the remote control, magazines, and so on.
                             <br>• Consider adding plants, music you love, and a special corner for family photos.
 
                         </p>
                     </div>
                     <div class="carousel-item">
-                        <p>bathroom
+                        <h1>Bathroom</h1>
+                        <p>
                             <br>• If possible store all your skincare products in one spot.
                             <br>• Store makeup in a fabulous box or vanity bag.
                             <br>• You can increase the relaxation effect significantly by selecting a container made of
