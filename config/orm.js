@@ -2,8 +2,13 @@ var db = require("../models");
 
 var orm = {
 
-  selectAll(res, model) {
-    db[model].findAll({}).then(function (data) {
+  selectAll(req, res, model) {
+    var user_id = req.body.user_id;
+    db[model].findAll({
+      where: {
+        user_id: user_id
+      }
+    }).then(function (data) {
       res.json(data);
     });
   },
@@ -42,36 +47,12 @@ var orm = {
   },
 
   checkUser(req, res, model) {
-    var username = req.body.username;
-    var password = req.body.password;
-    db[model].findOne({
-      where: {
-        username: username,
-        password: password
-      }
-    }).then(function (data) {
-      res.json(data);
-      console.log(data, 'sent!!!!!');
-    });
+    
   },
 
   createUser(req, res, model) {
-    var username = req.body.username;
-    var password = req.body.password;
-    db[model].findOne({
-      where: {
-        username: username
-      }
-    }).then(function (data) {
-      console.log('User exists');
-      res.json(data);
-    }).catch(function (data) {
-      db[model].create(req.body)
-        .then(function (data) {
-          console.log('User created');
-          res.json(data);
-        })
-    });
+    
+    
   }
 };
 

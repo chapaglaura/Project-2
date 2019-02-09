@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/../styles/form.css">
 <div class="d-flex justify-content-center align-items-center flex-column">
         <section class="container-fluid main-title">
-            <h1 class="text-center">Welcome, unknown!</h1>
+            <h1 class="text-center">Hello, stranger!</h1>
         </section>
         <section class="container-fluid main-area">
             <div class="row no-gutters">
@@ -17,8 +17,12 @@
                                 <label for="password">Password:</label>
                                 <input class="form-control" id="password" rows="3" required>
                             </div>
-                            <button type="submit" class="btn btn-secondary">Submit</button>
+                            <small class="error-msg invisible">User already exists</small>
+                            <button type="submit" class="btn btn-secondary d-block">Submit</button>
                         </form>
+                        <div class="text-right">
+                            <a href="/login">Log in</a>
+                        </div>
                     </div>
                 </div>
             </div>

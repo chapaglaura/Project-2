@@ -14,6 +14,10 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         len: [8, 15]
       }
+    },
+    user_id: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   });
   return User;

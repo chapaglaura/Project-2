@@ -20,6 +20,10 @@ module.exports = function(sequelize, DataTypes) {
     joy: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    user_id: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   });
   return Item;

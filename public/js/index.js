@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
 
@@ -14,14 +13,26 @@ $(document).ready(function () {
     console.log('submitting', userLogin);
 
     $.ajax("/api/userlogin", {
-      type: "GET",
+      method: "GET",
       data: userLogin
-    }).then(
-      function () {
-        console.log("logged in");
-        location.reload();
+    }).then(function (data) {
+      console.log(data);
+      if (data === null) {
+        $('.error-msg').removeClass('invisible');
       }
-    );
+      else {
+        console.log("logged in", data.user_id);
+        sessionStorage.setItem('logged', true);
+        sessionStorage.setItem('user_id', data.user_id);
+        window.location.href = '/items/' + data.user_id;
+      }
+    });
+  });
+
+  $('.logout').click(function () {
+    sessionStorage.setItem('logged', false);
+    sessionStorage.removeItem('user_id');
+    window.location.href = '/login';
   });
 
   $(".submit-user-signup").on("submit", function (event) {
@@ -34,26 +45,35 @@ $(document).ready(function () {
     console.log('submitting', userSignup);
 
     $.ajax("/api/usersignup", {
-      type: "GET",
+      method: "GET",
       data: userSignup
-    }).then(
-      function () {
-        console.log("signed up");
-        location.reload();
+    }).then(function (data) {
+      console.log(data);
+      if (data.exists) {
+        $('.error-msg').removeClass('invisible');
       }
+      else {
+        console.log("signed up");
+        window.location.href = '/login';
+      }
+    }
     );
   });
 
   $(".submit-item").on("submit", function (event) {
     event.preventDefault();
 
+    if (!sessionStorage.getItem('logged')) {
+      window.location.href = '/login';
+    }
 
     var newItem = {
       item_name: $("#item-name").val().trim(),
       category: $('#category-select').val(),
       location: $('#location-select').val(),
       description: $('#description-text').val().trim(),
-      joy: $('.rating').attr('data-value')
+      joy: $('.rating').attr('data-value'),
+      user_id: sessionStorage.getItem('user_id')
     };
 
     console.log('submitting', newItem);
@@ -73,8 +93,8 @@ $(document).ready(function () {
     var value = $(this).text().toLowerCase();
     value = value.split(' ').join('_');
     var filter = $(this).attr('data-filter');
-
-    window.location.href = `/items/${filter}/${value}`;
+    var id = sessionStorage.getItem('user_id');
+    window.location.href = `/items/${id}/${filter}/${value}`;
   });
 
   $('[contentEditable]').on('blur', function () {
@@ -95,7 +115,8 @@ $(document).ready(function () {
     var newValue = {
       id: id,
       col: col,
-      value: $(this).text()
+      value: $(this).text(),
+      user_id: sessionStorage.getItem('user_id')
     }
     $.ajax({
       method: "PUT",
